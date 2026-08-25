@@ -1,10 +1,10 @@
-# Секреты
+# Sercrets
 config.py
 .env
 
-# Кэш Python
+# Python cashes
 __pycache__/
 *.pyc
 
-# Логи
+# Logs
 *.log
