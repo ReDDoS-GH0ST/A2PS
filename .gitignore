@@ -1,0 +1,10 @@
+# Секреты
+config.py
+.env
+
+# Кэш Python
+__pycache__/
+*.pyc
+
+# Логи
+*.log
