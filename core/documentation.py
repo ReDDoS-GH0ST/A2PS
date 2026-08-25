@@ -15,7 +15,6 @@ commands = {
     "restart": "Restart A2PS",
     "help": "Print the usage documentation",
     "doc": "Print the usage documentation",
-    "--version": "Show A2PS version",
     "clear": "Clear the screen",
     "banner": "Show banner",
     "quit": "Exit the program",
@@ -27,6 +26,7 @@ arguments = {
     "--script=": ["Use script", "scanp"],
     "--plugin": ["Use plugin", "scanp", "showtar"],
     "-sV": ["Scan service and version", "scanp"],
+    "--version": ["Show A2PS version"],
     "-h": ["Print the usage documentation", "scanp", "showtar", "a2pee", "a2set", "a2crypt"],
     "-vb": ["Verbose process", "scanp", "showtar"],
 }
@@ -150,42 +150,6 @@ def showShowtarDoc():
                       "[yellow]showtar[/yellow] [light_green]-vb[/light_green]")
 
     console.print(richTable)
-
-
-def showA2peeDoc():
-    print("\n\t\t========================  Command \"a2pee\" Documentation ========================\n")
-    print(colored("Use command \"a2pee\" for using A2PEE\n", "white"))
-    print(colored("A2PEE (A2PS Exploits Engine) is an powerful engine for launching exploits\n", "white"))
-    # ===== Arguments of command "a2pee" =====
-    richTable = Table()
-    richTable.title = colored("Available arguments", "white")
-    richTable.add_column("№")
-    richTable.add_column("Argument")
-    richTable.add_column("Description")
-    richTable.add_column("Example")
-
-    richTable.add_row("[cyan]1[/cyan]", "[light_green]-h[/light_green]", "Print the usage documentation","[yellow]a2pee[/yellow] [light_green]-h[/light_green]")
-    richTable.add_row("[cyan]2[/cyan]", "[light_green]--use=[/light_green]", "Choose & use an exploit","[yellow]a2pee[/yellow] [light_green]--use=windows/smb/ms17010-eternal-blue[/light_green]")
-
-    console.print(richTable)
-
-def showA2setDoc():
-    print("\n\t\t========================  Command \"a2set\" Documentation ========================\n")
-    print(colored("Use command \"a2set\" for using A2SET\n", "white"))
-    print(colored("A2SET (A2PS Social Engineering Toolkit) is an powerful engine for launching soc. eng. tools\n", "white"))
-    # ===== Arguments of command "a2set" =====
-    richTable = Table()
-    richTable.title = colored("Available arguments", "white")
-    richTable.add_column("№")
-    richTable.add_column("Argument")
-    richTable.add_column("Description")
-    richTable.add_column("Example")
-
-    richTable.add_row("[cyan]1[/cyan]", "[light_green]-h[/light_green]", "Print the usage documentation","[yellow]a2set[/yellow] [light_green]-h[/light_green]")
-    richTable.add_row("[cyan]2[/cyan]", "[light_green]--use=[/light_green]", "Choose & use an tool","[yellow]a2set[/yellow] [light_green]--use=phishing/fakefacebook[/light_green]")
-
-    console.print(richTable)
-
 
 def showScripts():
     print("\n\t\t=========================  Scripts =========================\n")
