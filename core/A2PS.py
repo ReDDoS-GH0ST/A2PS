@@ -21,15 +21,12 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from bases.MAC_vendors import mac_vendors
 
 os_system = platform.system()
-table = Table()
 console = Console()
 commands = {
     "scanp": "Scan open ports",
     "showtar": "Scan the network and get available targets",
     "showscr": "Show available scripts",
-    "a2pee": "Use A2PS Exploits Engine",
-    "a2set": "Use A2PS Social Engineering Toolkit",
-    "a2crypt": "Use A2PS Cryptography Engine",
+    "--version": "Show A2PS version",
     "restart": "Restart A2PS",
     "help": "Print the usage documentation",
     "doc": "Print the usage documentation",
@@ -429,6 +426,9 @@ def main():
                     from documentation import showShowtarDoc
                     showShowtarDoc()
                     continue
+                elif "--plugin=" in command:
+                    plugin = command.split("--plugin=")[1].split()[0]
+                    portScanner.launch_plugin(plugin, targetIP)
                 elif "-vb" in command:
                     portScanner.get_available_targets(verbose=True)
                 else:
@@ -437,24 +437,6 @@ def main():
             elif command == "showscr":
                 import documentation
                 documentation.showScripts()
-
-            elif command.startswith("a2pee"):
-                if "-h" in command:
-                    from documentation import showA2peeDoc
-                    showA2peeDoc()
-                    continue
-
-            elif command.startswith("a2set"):
-                if "-h" in command:
-                    from documentation import showA2setDoc
-                    showA2setDoc()
-                    continue
-
-            elif command.startswith("a2crypt"):
-                if "-h" in command:
-                    from documentation import showA2setDoc
-                    showA2setDoc()
-                    continue
 
             elif command == "restart":
                 portScanner.restart()
