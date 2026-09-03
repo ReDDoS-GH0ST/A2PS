@@ -1,1 +1,1 @@
-rich, platform, termcolor, prettytable, alive_progress, impacket, scapy, paramiko, textual, requests, whois
+rich, platform, termcolor, prettytable, alive_progress, subprocess, impacket, scapy, paramiko, textual, requests, whois
