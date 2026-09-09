@@ -446,13 +446,10 @@ def main():
                 print(colored("Nmap scanner, MSF spirit"))
 
             elif command in ["help", "doc"]:
-                from documentation import showA2setDoc, showA2peeDoc, showGeneralDoc, showScanpDoc, showShowtarDoc, \
-                    showScripts
+                from documentation import showGeneralDoc, showScanpDoc, showShowtarDoc, showScripts
                 showGeneralDoc()
                 showScanpDoc()
                 showShowtarDoc()
-                showA2peeDoc()
-                showA2setDoc()
                 showScripts()
                 print(colored("To use A2PS just write a command, as well as arguments and/or scripts if necessary",
                               "white"))
