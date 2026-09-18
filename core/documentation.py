@@ -27,7 +27,7 @@ arguments = {
     "--plugin": ["Use plugin", "scanp", "showtar"],
     "-sV": ["Scan service and version", "scanp"],
     "--version": ["Show A2PS version"],
-    "-h": ["Print the usage documentation", "scanp", "showtar", "a2pee", "a2set", "a2crypt"],
+    "-h": ["Print the usage documentation", "scanp", "showtar"],
     "-vb": ["Verbose process", "scanp", "showtar"],
 }
 scripts = {
