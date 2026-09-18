@@ -37,7 +37,7 @@ def show_banner():
     banner = """
                             🎯 V  U  L  N --- H  U  N  T 🎯
      -------------------------------------------------------------------------------------
-     | 🖥️: Doctor, I've some head ake!<═══>🖨️: May You get it up?<═                      |
+     | 🖥️: Doctor, I've some leg ake!<═══>🖨️: May You get it up?<═                      |
      |═>🖥️: Of course!<═══>🖨️: Let's look at it...<═══>🖥️: Well, what's                  |
      |there?<═══>💀: You'd better not know it...<═══>🖥️ It’s just a small vuln...right?  |
      -------------------------------------------------------------------------------------
